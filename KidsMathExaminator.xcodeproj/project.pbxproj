@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		563135EA1BB1AD2C007D46D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563135E91BB1AD2C007D46D7 /* AppDelegate.swift */; };
+		563135EC1BB1AD2C007D46D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563135EB1BB1AD2C007D46D7 /* ViewController.swift */; };
+		563135EF1BB1AD2C007D46D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563135ED1BB1AD2C007D46D7 /* Main.storyboard */; };
+		563135F11BB1AD2C007D46D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563135F01BB1AD2C007D46D7 /* Assets.xcassets */; };
+		563135F41BB1AD2C007D46D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563135F21BB1AD2C007D46D7 /* LaunchScreen.storyboard */; };
+		563135FF1BB1AD2C007D46D7 /* KidsMathExaminatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563135FE1BB1AD2C007D46D7 /* KidsMathExaminatorTests.swift */; };
+		5631360A1BB1AD2C007D46D7 /* KidsMathExaminatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563136091BB1AD2C007D46D7 /* KidsMathExaminatorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		563135FB1BB1AD2C007D46D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 563135DE1BB1AD2C007D46D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 563135E51BB1AD2C007D46D7;
+			remoteInfo = KidsMathExaminator;
+		};
+		563136061BB1AD2C007D46D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 563135DE1BB1AD2C007D46D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 563135E51BB1AD2C007D46D7;
+			remoteInfo = KidsMathExaminator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		563135E61BB1AD2C007D46D7 /* KidsMathExaminator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidsMathExaminator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		563135E91BB1AD2C007D46D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		563135EB1BB1AD2C007D46D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		563135EE1BB1AD2C007D46D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		563135F01BB1AD2C007D46D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		563135F31BB1AD2C007D46D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		563135F51BB1AD2C007D46D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		563135FA1BB1AD2C007D46D7 /* KidsMathExaminatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidsMathExaminatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		563135FE1BB1AD2C007D46D7 /* KidsMathExaminatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsMathExaminatorTests.swift; sourceTree = "<group>"; };
+		563136001BB1AD2C007D46D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		563136051BB1AD2C007D46D7 /* KidsMathExaminatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidsMathExaminatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		563136091BB1AD2C007D46D7 /* KidsMathExaminatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsMathExaminatorUITests.swift; sourceTree = "<group>"; };
+		5631360B1BB1AD2C007D46D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		563135E31BB1AD2C007D46D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		563135F71BB1AD2C007D46D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		563136021BB1AD2C007D46D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		563135DD1BB1AD2C007D46D7 = {
+			isa = PBXGroup;
+			children = (
+				563135E81BB1AD2C007D46D7 /* KidsMathExaminator */,
+				563135FD1BB1AD2C007D46D7 /* KidsMathExaminatorTests */,
+				563136081BB1AD2C007D46D7 /* KidsMathExaminatorUITests */,
+				563135E71BB1AD2C007D46D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		563135E71BB1AD2C007D46D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				563135E61BB1AD2C007D46D7 /* KidsMathExaminator.app */,
+				563135FA1BB1AD2C007D46D7 /* KidsMathExaminatorTests.xctest */,
+				563136051BB1AD2C007D46D7 /* KidsMathExaminatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		563135E81BB1AD2C007D46D7 /* KidsMathExaminator */ = {
+			isa = PBXGroup;
+			children = (
+				563135E91BB1AD2C007D46D7 /* AppDelegate.swift */,
+				563135EB1BB1AD2C007D46D7 /* ViewController.swift */,
+				563135ED1BB1AD2C007D46D7 /* Main.storyboard */,
+				563135F01BB1AD2C007D46D7 /* Assets.xcassets */,
+				563135F21BB1AD2C007D46D7 /* LaunchScreen.storyboard */,
+				563135F51BB1AD2C007D46D7 /* Info.plist */,
+			);
+			path = KidsMathExaminator;
+			sourceTree = "<group>";
+		};
+		563135FD1BB1AD2C007D46D7 /* KidsMathExaminatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				563135FE1BB1AD2C007D46D7 /* KidsMathExaminatorTests.swift */,
+				563136001BB1AD2C007D46D7 /* Info.plist */,
+			);
+			path = KidsMathExaminatorTests;
+			sourceTree = "<group>";
+		};
+		563136081BB1AD2C007D46D7 /* KidsMathExaminatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				563136091BB1AD2C007D46D7 /* KidsMathExaminatorUITests.swift */,
+				5631360B1BB1AD2C007D46D7 /* Info.plist */,
+			);
+			path = KidsMathExaminatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		563135E51BB1AD2C007D46D7 /* KidsMathExaminator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5631360E1BB1AD2C007D46D7 /* Build configuration list for PBXNativeTarget "KidsMathExaminator" */;
+			buildPhases = (
+				563135E21BB1AD2C007D46D7 /* Sources */,
+				563135E31BB1AD2C007D46D7 /* Frameworks */,
+				563135E41BB1AD2C007D46D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KidsMathExaminator;
+			productName = KidsMathExaminator;
+			productReference = 563135E61BB1AD2C007D46D7 /* KidsMathExaminator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		563135F91BB1AD2C007D46D7 /* KidsMathExaminatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 563136111BB1AD2C007D46D7 /* Build configuration list for PBXNativeTarget "KidsMathExaminatorTests" */;
+			buildPhases = (
+				563135F61BB1AD2C007D46D7 /* Sources */,
+				563135F71BB1AD2C007D46D7 /* Frameworks */,
+				563135F81BB1AD2C007D46D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				563135FC1BB1AD2C007D46D7 /* PBXTargetDependency */,
+			);
+			name = KidsMathExaminatorTests;
+			productName = KidsMathExaminatorTests;
+			productReference = 563135FA1BB1AD2C007D46D7 /* KidsMathExaminatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		563136041BB1AD2C007D46D7 /* KidsMathExaminatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 563136141BB1AD2C007D46D7 /* Build configuration list for PBXNativeTarget "KidsMathExaminatorUITests" */;
+			buildPhases = (
+				563136011BB1AD2C007D46D7 /* Sources */,
+				563136021BB1AD2C007D46D7 /* Frameworks */,
+				563136031BB1AD2C007D46D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				563136071BB1AD2C007D46D7 /* PBXTargetDependency */,
+			);
+			name = KidsMathExaminatorUITests;
+			productName = KidsMathExaminatorUITests;
+			productReference = 563136051BB1AD2C007D46D7 /* KidsMathExaminatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		563135DE1BB1AD2C007D46D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Dmitry Matyushkin";
+				TargetAttributes = {
+					563135E51BB1AD2C007D46D7 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					563135F91BB1AD2C007D46D7 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 563135E51BB1AD2C007D46D7;
+					};
+					563136041BB1AD2C007D46D7 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 563135E51BB1AD2C007D46D7;
+					};
+				};
+			};
+			buildConfigurationList = 563135E11BB1AD2C007D46D7 /* Build configuration list for PBXProject "KidsMathExaminator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 563135DD1BB1AD2C007D46D7;
+			productRefGroup = 563135E71BB1AD2C007D46D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				563135E51BB1AD2C007D46D7 /* KidsMathExaminator */,
+				563135F91BB1AD2C007D46D7 /* KidsMathExaminatorTests */,
+				563136041BB1AD2C007D46D7 /* KidsMathExaminatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		563135E41BB1AD2C007D46D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563135F41BB1AD2C007D46D7 /* LaunchScreen.storyboard in Resources */,
+				563135F11BB1AD2C007D46D7 /* Assets.xcassets in Resources */,
+				563135EF1BB1AD2C007D46D7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		563135F81BB1AD2C007D46D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		563136031BB1AD2C007D46D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		563135E21BB1AD2C007D46D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563135EC1BB1AD2C007D46D7 /* ViewController.swift in Sources */,
+				563135EA1BB1AD2C007D46D7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		563135F61BB1AD2C007D46D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563135FF1BB1AD2C007D46D7 /* KidsMathExaminatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		563136011BB1AD2C007D46D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5631360A1BB1AD2C007D46D7 /* KidsMathExaminatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		563135FC1BB1AD2C007D46D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 563135E51BB1AD2C007D46D7 /* KidsMathExaminator */;
+			targetProxy = 563135FB1BB1AD2C007D46D7 /* PBXContainerItemProxy */;
+		};
+		563136071BB1AD2C007D46D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 563135E51BB1AD2C007D46D7 /* KidsMathExaminator */;
+			targetProxy = 563136061BB1AD2C007D46D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		563135ED1BB1AD2C007D46D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				563135EE1BB1AD2C007D46D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		563135F21BB1AD2C007D46D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				563135F31BB1AD2C007D46D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5631360C1BB1AD2C007D46D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5631360D1BB1AD2C007D46D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5631360F1BB1AD2C007D46D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KidsMathExaminator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdd.KidsMathExaminator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		563136101BB1AD2C007D46D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KidsMathExaminator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdd.KidsMathExaminator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		563136121BB1AD2C007D46D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KidsMathExaminatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdd.KidsMathExaminatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KidsMathExaminator.app/KidsMathExaminator";
+			};
+			name = Debug;
+		};
+		563136131BB1AD2C007D46D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KidsMathExaminatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdd.KidsMathExaminatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KidsMathExaminator.app/KidsMathExaminator";
+			};
+			name = Release;
+		};
+		563136151BB1AD2C007D46D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KidsMathExaminatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdd.KidsMathExaminatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KidsMathExaminator;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		563136161BB1AD2C007D46D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KidsMathExaminatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdd.KidsMathExaminatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KidsMathExaminator;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		563135E11BB1AD2C007D46D7 /* Build configuration list for PBXProject "KidsMathExaminator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5631360C1BB1AD2C007D46D7 /* Debug */,
+				5631360D1BB1AD2C007D46D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5631360E1BB1AD2C007D46D7 /* Build configuration list for PBXNativeTarget "KidsMathExaminator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5631360F1BB1AD2C007D46D7 /* Debug */,
+				563136101BB1AD2C007D46D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		563136111BB1AD2C007D46D7 /* Build configuration list for PBXNativeTarget "KidsMathExaminatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				563136121BB1AD2C007D46D7 /* Debug */,
+				563136131BB1AD2C007D46D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		563136141BB1AD2C007D46D7 /* Build configuration list for PBXNativeTarget "KidsMathExaminatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				563136151BB1AD2C007D46D7 /* Debug */,
+				563136161BB1AD2C007D46D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 563135DE1BB1AD2C007D46D7 /* Project object */;
+}
