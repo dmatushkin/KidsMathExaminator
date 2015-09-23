@@ -14,6 +14,13 @@
 		563135F41BB1AD2C007D46D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563135F21BB1AD2C007D46D7 /* LaunchScreen.storyboard */; };
 		563135FF1BB1AD2C007D46D7 /* KidsMathExaminatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563135FE1BB1AD2C007D46D7 /* KidsMathExaminatorTests.swift */; };
 		5631360A1BB1AD2C007D46D7 /* KidsMathExaminatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563136091BB1AD2C007D46D7 /* KidsMathExaminatorUITests.swift */; };
+		563136181BB1BF02007D46D7 /* NumberSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563136171BB1BF02007D46D7 /* NumberSelectTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		56A60C1D1BB1C5DF00D5C52B /* ExaminatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A60C1C1BB1C5DF00D5C52B /* ExaminatorViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		56A60C1F1BB26DE400D5C52B /* ExamFinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A60C1E1BB26DE400D5C52B /* ExamFinishedViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		56D42DF11BB3246100CE6245 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DF01BB3246100CE6245 /* SwitchCell.swift */; settings = {ASSET_TAGS = (); }; };
+		56D42DF31BB3247F00CE6245 /* DisclosureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DF21BB3247F00CE6245 /* DisclosureCell.swift */; settings = {ASSET_TAGS = (); }; };
+		56D42DFA1BB3280500CE6245 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DF91BB3280500CE6245 /* UITableViewCellExtension.swift */; settings = {ASSET_TAGS = (); }; };
+		56D42DFC1BB3292B00CE6245 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DFB1BB3292B00CE6245 /* UITableViewExtension.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		563136051BB1AD2C007D46D7 /* KidsMathExaminatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidsMathExaminatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		563136091BB1AD2C007D46D7 /* KidsMathExaminatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsMathExaminatorUITests.swift; sourceTree = "<group>"; };
 		5631360B1BB1AD2C007D46D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		563136171BB1BF02007D46D7 /* NumberSelectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberSelectTableViewController.swift; sourceTree = "<group>"; };
+		56A60C1C1BB1C5DF00D5C52B /* ExaminatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExaminatorViewController.swift; sourceTree = "<group>"; };
+		56A60C1E1BB26DE400D5C52B /* ExamFinishedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamFinishedViewController.swift; sourceTree = "<group>"; };
+		56D42DF01BB3246100CE6245 /* SwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
+		56D42DF21BB3247F00CE6245 /* DisclosureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisclosureCell.swift; sourceTree = "<group>"; };
+		56D42DF91BB3280500CE6245 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		56D42DFB1BB3292B00CE6245 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +111,12 @@
 		563135E81BB1AD2C007D46D7 /* KidsMathExaminator */ = {
 			isa = PBXGroup;
 			children = (
+				56D42DF81BB327EB00CE6245 /* Extensions */,
+				56D42DF71BB3251D00CE6245 /* Examinator */,
+				56D42DF61BB324E000CE6245 /* Resources */,
+				56D42DF51BB324C800CE6245 /* Storyboards */,
+				56D42DF41BB3248700CE6245 /* ExamSettings */,
 				563135E91BB1AD2C007D46D7 /* AppDelegate.swift */,
-				563135EB1BB1AD2C007D46D7 /* ViewController.swift */,
-				563135ED1BB1AD2C007D46D7 /* Main.storyboard */,
-				563135F01BB1AD2C007D46D7 /* Assets.xcassets */,
-				563135F21BB1AD2C007D46D7 /* LaunchScreen.storyboard */,
-				563135F51BB1AD2C007D46D7 /* Info.plist */,
 			);
 			path = KidsMathExaminator;
 			sourceTree = "<group>";
@@ -123,6 +137,53 @@
 				5631360B1BB1AD2C007D46D7 /* Info.plist */,
 			);
 			path = KidsMathExaminatorUITests;
+			sourceTree = "<group>";
+		};
+		56D42DF41BB3248700CE6245 /* ExamSettings */ = {
+			isa = PBXGroup;
+			children = (
+				563136171BB1BF02007D46D7 /* NumberSelectTableViewController.swift */,
+				563135EB1BB1AD2C007D46D7 /* ViewController.swift */,
+				56D42DF01BB3246100CE6245 /* SwitchCell.swift */,
+				56D42DF21BB3247F00CE6245 /* DisclosureCell.swift */,
+			);
+			name = ExamSettings;
+			sourceTree = "<group>";
+		};
+		56D42DF51BB324C800CE6245 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				563135ED1BB1AD2C007D46D7 /* Main.storyboard */,
+				563135F21BB1AD2C007D46D7 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		56D42DF61BB324E000CE6245 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				563135F01BB1AD2C007D46D7 /* Assets.xcassets */,
+				563135F51BB1AD2C007D46D7 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		56D42DF71BB3251D00CE6245 /* Examinator */ = {
+			isa = PBXGroup;
+			children = (
+				56A60C1E1BB26DE400D5C52B /* ExamFinishedViewController.swift */,
+				56A60C1C1BB1C5DF00D5C52B /* ExaminatorViewController.swift */,
+			);
+			name = Examinator;
+			sourceTree = "<group>";
+		};
+		56D42DF81BB327EB00CE6245 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				56D42DF91BB3280500CE6245 /* UITableViewCellExtension.swift */,
+				56D42DFB1BB3292B00CE6245 /* UITableViewExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,8 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56A60C1D1BB1C5DF00D5C52B /* ExaminatorViewController.swift in Sources */,
+				563136181BB1BF02007D46D7 /* NumberSelectTableViewController.swift in Sources */,
 				563135EC1BB1AD2C007D46D7 /* ViewController.swift in Sources */,
+				56A60C1F1BB26DE400D5C52B /* ExamFinishedViewController.swift in Sources */,
 				563135EA1BB1AD2C007D46D7 /* AppDelegate.swift in Sources */,
+				56D42DF31BB3247F00CE6245 /* DisclosureCell.swift in Sources */,
+				56D42DFC1BB3292B00CE6245 /* UITableViewExtension.swift in Sources */,
+				56D42DF11BB3246100CE6245 /* SwitchCell.swift in Sources */,
+				56D42DFA1BB3280500CE6245 /* UITableViewCellExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +549,7 @@
 				563136101BB1AD2C007D46D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		563136111BB1AD2C007D46D7 /* Build configuration list for PBXNativeTarget "KidsMathExaminatorTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +558,7 @@
 				563136131BB1AD2C007D46D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		563136141BB1AD2C007D46D7 /* Build configuration list for PBXNativeTarget "KidsMathExaminatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +567,7 @@
 				563136161BB1AD2C007D46D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
