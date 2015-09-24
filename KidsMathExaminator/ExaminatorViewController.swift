@@ -102,7 +102,7 @@ class ExaminatorViewController: UIViewController {
             errorsNumber++
             flashInputWithColor(UIColor.redColor())
         }
-        self.resultField.text = ""
+        //self.resultField.text = ""
     }
 
     func setTaskConditions(x x : Int, y : Int, sign : MathSign) {
@@ -125,6 +125,7 @@ class ExaminatorViewController: UIViewController {
     }
 
     func getNextExam() {
+        self.resultField.text = ""
         let sign = self.operations[Int(arc4random_uniform(UInt32(self.operations.count)))]
         var x = Int(arc4random_uniform(UInt32(operandMax))) + 1
         var y = Int(arc4random_uniform(UInt32(operandMax))) + 1

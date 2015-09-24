@@ -37,7 +37,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     func updateRunButton() {
         self.runButton.enabled = (NSUserDefaults.allowAddition || NSUserDefaults.allowDivision || NSUserDefaults.allowMultiplication || NSUserDefaults.allowSubstraction) && NSUserDefaults.operandMaximum > 0 && NSUserDefaults.tasksCount > 0
-        self.runButton.backgroundColor = self.runButton.enabled ? UIColor.greenColor() : UIColor.grayColor()
+        self.runButton.backgroundColor = self.runButton.enabled ? UIColor.greenColor() : UIColor.lightGrayColor()
     }
 
     @IBAction func unwindToSettings(segue: UIStoryboardSegue) {
