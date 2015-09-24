@@ -85,6 +85,9 @@ class ExaminatorViewController: UIViewController {
     }
 
     @IBAction func nextAction(sender: UIButton) {
+        guard resultField.text?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0 else {
+            return
+        }
         if let result = Int(resultField.text!) where result == currentResult {
             currentExam++
             flashInputWithColor(UIColor.greenColor())
