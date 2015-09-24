@@ -26,15 +26,18 @@
                                 <state key="normal" title="Run">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="L6e-w9-sAO" kind="show" id="eyg-j9-ELf"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="c6G-A4-lNZ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="c6G-A4-lNZ">
                                 <rect key="frame" x="0.0" y="64" width="375" height="543"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="KidsMathExaminator.SwitchCell" id="dg7-Xu-GL1" customClass="SwitchCell" customModule="KidsMathExaminator" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="KidsMathExaminator.SwitchCell" id="dg7-Xu-GL1" customClass="SwitchCell" customModule="KidsMathExaminator" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dg7-Xu-GL1" id="9Uf-E6-hJb">
@@ -42,13 +45,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrr-1L-6Wz">
-                                                    <rect key="frame" x="8" y="11" width="300" height="21"/>
+                                                    <rect key="frame" x="16" y="11" width="284" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IfT-QF-mDK">
-                                                    <rect key="frame" x="318" y="6" width="51" height="31"/>
+                                                    <rect key="frame" x="310" y="6" width="51" height="31"/>
                                                     <connections>
                                                         <action selector="valueChangedAction:" destination="dg7-Xu-GL1" eventType="valueChanged" id="Gvf-J4-Qu1"/>
                                                     </connections>
@@ -57,9 +60,9 @@
                                             <constraints>
                                                 <constraint firstItem="IfT-QF-mDK" firstAttribute="centerY" secondItem="9Uf-E6-hJb" secondAttribute="centerY" id="0y9-fK-rrC"/>
                                                 <constraint firstItem="IfT-QF-mDK" firstAttribute="leading" secondItem="rrr-1L-6Wz" secondAttribute="trailing" constant="10" id="DqG-Y8-ECc"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="IfT-QF-mDK" secondAttribute="trailing" id="Lti-79-9Lp"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="IfT-QF-mDK" secondAttribute="trailing" constant="8" id="Lti-79-9Lp"/>
                                                 <constraint firstItem="rrr-1L-6Wz" firstAttribute="centerY" secondItem="9Uf-E6-hJb" secondAttribute="centerY" id="isz-MZ-7Yf"/>
-                                                <constraint firstAttribute="leadingMargin" secondItem="rrr-1L-6Wz" secondAttribute="leading" id="ul5-Mt-sAV"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="rrr-1L-6Wz" secondAttribute="leading" constant="-8" id="ul5-Mt-sAV"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -67,7 +70,7 @@
                                             <outlet property="valueSwitch" destination="IfT-QF-mDK" id="lyC-br-6TM"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="KidsMathExaminator.DisclosureCell" id="r1A-an-N3f" customClass="DisclosureCell" customModule="KidsMathExaminator" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="KidsMathExaminator.DisclosureCell" id="r1A-an-N3f" customClass="DisclosureCell" customModule="KidsMathExaminator" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="94" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r1A-an-N3f" id="h7I-t2-AXx">
@@ -75,7 +78,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYe-tw-g7T">
-                                                    <rect key="frame" x="8" y="11" width="274" height="21"/>
+                                                    <rect key="frame" x="16" y="11" width="266" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -94,7 +97,7 @@
                                                 <constraint firstItem="JNg-1U-A3Z" firstAttribute="leading" secondItem="GYe-tw-g7T" secondAttribute="trailing" constant="10" id="0Ya-dd-bqy"/>
                                                 <constraint firstItem="JNg-1U-A3Z" firstAttribute="centerY" secondItem="h7I-t2-AXx" secondAttribute="centerY" id="4PW-ZB-apm"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="JNg-1U-A3Z" secondAttribute="trailing" id="H2D-u6-cVj"/>
-                                                <constraint firstAttribute="leadingMargin" secondItem="GYe-tw-g7T" secondAttribute="leading" id="RyK-zl-nkD"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="GYe-tw-g7T" secondAttribute="leading" constant="-8" id="RyK-zl-nkD"/>
                                                 <constraint firstItem="GYe-tw-g7T" firstAttribute="centerY" secondItem="h7I-t2-AXx" secondAttribute="centerY" id="YXr-qi-P4Z"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -102,6 +105,65 @@
                                             <outlet property="titleLabel" destination="GYe-tw-g7T" id="N4n-nR-Rdp"/>
                                             <outlet property="valueLabel" destination="JNg-1U-A3Z" id="fGx-V8-fai"/>
                                             <segue destination="Urx-za-hkr" kind="show" identifier="NumberSelect" id="ffF-fa-1iu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="KidsMathExaminator.NumberSelectorCell" id="qcJ-ni-7Bq" customClass="NumberSelectorCell" customModule="KidsMathExaminator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="138" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qcJ-ni-7Bq" id="2js-b6-bEC">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJB-fE-PWA">
+                                                    <rect key="frame" x="16" y="11" width="233" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="270" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBg-6i-uyn">
+                                                    <rect key="frame" x="257" y="7" width="30" height="30"/>
+                                                    <state key="normal" image="MinusIcon"/>
+                                                    <connections>
+                                                        <action selector="valueDecreaseAction:" destination="qcJ-ni-7Bq" eventType="touchUpInside" id="zxu-E1-wgJ"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="270" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLc-7h-ssA">
+                                                    <rect key="frame" x="337" y="7" width="30" height="30"/>
+                                                    <state key="normal" image="PlusIcon"/>
+                                                    <connections>
+                                                        <action selector="valueIncreaseAction:" destination="qcJ-ni-7Bq" eventType="touchUpInside" id="qJG-6a-FdS"/>
+                                                    </connections>
+                                                </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bD7-LD-QD6">
+                                                    <rect key="frame" x="287" y="7" width="50" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="zAB-Kp-xNU"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <connections>
+                                                        <action selector="valueChangedAction:" destination="qcJ-ni-7Bq" eventType="editingDidEndOnExit" id="KQP-ft-vcA"/>
+                                                        <action selector="valueChangedAction:" destination="qcJ-ni-7Bq" eventType="editingDidEnd" id="UKi-Fg-Q9a"/>
+                                                        <action selector="valueChangedAction:" destination="qcJ-ni-7Bq" eventType="valueChanged" id="bY8-Uh-1lq"/>
+                                                        <action selector="valueChangedAction:" destination="qcJ-ni-7Bq" eventType="editingChanged" id="okX-af-1Wg"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lBg-6i-uyn" firstAttribute="centerY" secondItem="bD7-LD-QD6" secondAttribute="centerY" id="MJ4-Jh-mGo"/>
+                                                <constraint firstItem="bD7-LD-QD6" firstAttribute="centerY" secondItem="XLc-7h-ssA" secondAttribute="centerY" id="N6T-js-wLw"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="XLc-7h-ssA" secondAttribute="trailing" id="Yih-Dk-DG1"/>
+                                                <constraint firstItem="JJB-fE-PWA" firstAttribute="centerY" secondItem="2js-b6-bEC" secondAttribute="centerY" id="cqZ-Pc-tYV"/>
+                                                <constraint firstItem="bD7-LD-QD6" firstAttribute="leading" secondItem="lBg-6i-uyn" secondAttribute="trailing" id="dTV-Zd-bfa"/>
+                                                <constraint firstItem="XLc-7h-ssA" firstAttribute="centerY" secondItem="2js-b6-bEC" secondAttribute="centerY" id="e7S-U7-XhO"/>
+                                                <constraint firstItem="JJB-fE-PWA" firstAttribute="leading" secondItem="2js-b6-bEC" secondAttribute="leadingMargin" constant="8" id="jRC-FB-OwF"/>
+                                                <constraint firstItem="XLc-7h-ssA" firstAttribute="leading" secondItem="bD7-LD-QD6" secondAttribute="trailing" id="nHg-sS-4T5"/>
+                                                <constraint firstItem="lBg-6i-uyn" firstAttribute="leading" secondItem="JJB-fE-PWA" secondAttribute="trailing" constant="8" id="zPd-JB-tnq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="JJB-fE-PWA" id="7IN-rN-fkb"/>
+                                            <outlet property="valueField" destination="bD7-LD-QD6" id="ys7-5l-Ubh"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -124,6 +186,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Exam settings" id="IXX-sB-tHo"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bottomLayoutConstraint" destination="Iia-tK-ulx" id="XPm-ZX-HN8"/>
+                        <outlet property="runButton" destination="JBt-J5-xXq" id="E3B-gk-AlA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -429,4 +495,8 @@
             <point key="canvasLocation" x="444" y="475"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MinusIcon" width="30" height="30"/>
+        <image name="PlusIcon" width="30" height="30"/>
+    </resources>
 </document>

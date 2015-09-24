@@ -21,6 +21,8 @@
 		56D42DF31BB3247F00CE6245 /* DisclosureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DF21BB3247F00CE6245 /* DisclosureCell.swift */; settings = {ASSET_TAGS = (); }; };
 		56D42DFA1BB3280500CE6245 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DF91BB3280500CE6245 /* UITableViewCellExtension.swift */; settings = {ASSET_TAGS = (); }; };
 		56D42DFC1BB3292B00CE6245 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DFB1BB3292B00CE6245 /* UITableViewExtension.swift */; settings = {ASSET_TAGS = (); }; };
+		56D42DFE1BB338DC00CE6245 /* NumberSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DFD1BB338DC00CE6245 /* NumberSelectorCell.swift */; settings = {ASSET_TAGS = (); }; };
+		56D42E001BB3C8F900CE6245 /* NSUserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DFF1BB3C8F900CE6245 /* NSUserDefaultsExtension.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		56D42DF21BB3247F00CE6245 /* DisclosureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisclosureCell.swift; sourceTree = "<group>"; };
 		56D42DF91BB3280500CE6245 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
 		56D42DFB1BB3292B00CE6245 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		56D42DFD1BB338DC00CE6245 /* NumberSelectorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberSelectorCell.swift; sourceTree = "<group>"; };
+		56D42DFF1BB3C8F900CE6245 /* NSUserDefaultsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSUserDefaultsExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +115,9 @@
 		563135E81BB1AD2C007D46D7 /* KidsMathExaminator */ = {
 			isa = PBXGroup;
 			children = (
+				56D42DF61BB324E000CE6245 /* Resources */,
 				56D42DF81BB327EB00CE6245 /* Extensions */,
 				56D42DF71BB3251D00CE6245 /* Examinator */,
-				56D42DF61BB324E000CE6245 /* Resources */,
 				56D42DF51BB324C800CE6245 /* Storyboards */,
 				56D42DF41BB3248700CE6245 /* ExamSettings */,
 				563135E91BB1AD2C007D46D7 /* AppDelegate.swift */,
@@ -146,6 +150,7 @@
 				563135EB1BB1AD2C007D46D7 /* ViewController.swift */,
 				56D42DF01BB3246100CE6245 /* SwitchCell.swift */,
 				56D42DF21BB3247F00CE6245 /* DisclosureCell.swift */,
+				56D42DFD1BB338DC00CE6245 /* NumberSelectorCell.swift */,
 			);
 			name = ExamSettings;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			children = (
 				56D42DF91BB3280500CE6245 /* UITableViewCellExtension.swift */,
 				56D42DFB1BB3292B00CE6245 /* UITableViewExtension.swift */,
+				56D42DFF1BB3C8F900CE6245 /* NSUserDefaultsExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -321,6 +327,8 @@
 				563135EC1BB1AD2C007D46D7 /* ViewController.swift in Sources */,
 				56A60C1F1BB26DE400D5C52B /* ExamFinishedViewController.swift in Sources */,
 				563135EA1BB1AD2C007D46D7 /* AppDelegate.swift in Sources */,
+				56D42E001BB3C8F900CE6245 /* NSUserDefaultsExtension.swift in Sources */,
+				56D42DFE1BB338DC00CE6245 /* NumberSelectorCell.swift in Sources */,
 				56D42DF31BB3247F00CE6245 /* DisclosureCell.swift in Sources */,
 				56D42DFC1BB3292B00CE6245 /* UITableViewExtension.swift in Sources */,
 				56D42DF11BB3246100CE6245 /* SwitchCell.swift in Sources */,

@@ -11,6 +11,8 @@ import UIKit
 enum MathSign {
     case Plus
     case Minus
+    case Multiplication
+    case Division
 }
 
 class ExaminatorViewController: UIViewController {
@@ -23,9 +25,25 @@ class ExaminatorViewController: UIViewController {
     @IBOutlet weak var numberOfExamsLabel: UILabel!
     @IBOutlet weak var numberOfErrorsLabel: UILabel!
 
-    let firstNumberMax = 20
-    let secondNumberMax = 20
-    let numberOfExams = 60
+    let operandMax = NSUserDefaults.operandMaximum
+    let numberOfExams = NSUserDefaults.tasksCount
+    let operations : [MathSign] = {
+        var result = [MathSign]()
+        if NSUserDefaults.allowAddition {
+            result.append(MathSign.Plus)
+        }
+        if NSUserDefaults.allowSubstraction {
+            result.append(MathSign.Minus)
+        }
+        if NSUserDefaults.allowMultiplication {
+            result.append(MathSign.Multiplication)
+        }
+        if NSUserDefaults.allowDivision {
+            result.append(MathSign.Division)
+        }
+        return result
+    }()
+
     var currentExam = 1 {
         didSet {
             self.currentExamLabel.text = "\(self.currentExam)"
@@ -87,10 +105,7 @@ class ExaminatorViewController: UIViewController {
         self.resultField.text = ""
     }
 
-    func getNextExam() {
-        let x = Int(arc4random_uniform(UInt32(firstNumberMax))) + 1
-        let y = Int(arc4random_uniform(UInt32(secondNumberMax))) + 1
-        let sign = x > y && (arc4random_uniform(10) > 2) ? MathSign.Minus : MathSign.Plus
+    func setTaskConditions(x x : Int, y : Int, sign : MathSign) {
         self.firstNumberLabel.text = "\(x)"
         self.secondNumberLabel.text = "\(y)"
         switch(sign) {
@@ -100,6 +115,27 @@ class ExaminatorViewController: UIViewController {
         case .Minus:
             self.signLabel.text = "-"
             currentResult = x - y
+        case .Multiplication:
+            self.signLabel.text = "*"
+            currentResult = x * y
+        case .Division:
+            self.signLabel.text = "/"
+            currentResult = x / y
         }
+    }
+
+    func getNextExam() {
+        let sign = self.operations[Int(arc4random_uniform(UInt32(self.operations.count)))]
+        var x = Int(arc4random_uniform(UInt32(operandMax))) + 1
+        var y = Int(arc4random_uniform(UInt32(operandMax))) + 1
+        if x < y && sign == MathSign.Minus {
+            let z = x
+            x = y
+            y = z
+        }
+        if sign == MathSign.Division {
+            x = x * y
+        }
+        setTaskConditions(x: x, y: y, sign: sign)
     }
 }
