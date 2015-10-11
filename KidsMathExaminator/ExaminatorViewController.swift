@@ -44,6 +44,10 @@ class ExaminatorViewController: UIViewController {
         return result
     }()
 
+    let allOperations : [(Int, Int) -> (Int)] = [ (+) , (-) , (*) , (/) ]
+
+    var errorOperations : [(x : Int, y : Int, op : MathSign, result : Int)] = []
+
     var currentExam = 1 {
         didSet {
             self.currentExamLabel.text = "\(self.currentExam)"
@@ -60,6 +64,30 @@ class ExaminatorViewController: UIViewController {
     }
 
     var currentResult = 0
+    var firstNumber : Int = 0 {
+        didSet {
+            firstNumberLabel.text = "\(firstNumber)"
+        }
+    }
+    var secondNumber : Int = 0 {
+        didSet {
+            secondNumberLabel.text = "\(secondNumber)"
+        }
+    }
+    var currentOperation : MathSign = MathSign.Plus {
+        didSet {
+            switch(currentOperation) {
+            case .Plus:
+                self.signLabel.text = "+"
+            case .Minus:
+                self.signLabel.text = "-"
+            case .Multiplication:
+                self.signLabel.text = "*"
+            case .Division:
+                self.signLabel.text = "/"
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,45 +112,66 @@ class ExaminatorViewController: UIViewController {
         })
     }
 
+    func flashSign() {
+        UIView.animateWithDuration(0.5, animations: { () -> Void in
+            self.signLabel.alpha = 0.0;
+            }, completion: { (success) -> Void in
+                UIView.animateWithDuration(0.5, animations: { () -> Void in
+                    self.signLabel.alpha = 1.0;
+                })
+        })
+    }
+
     @IBAction func nextAction(sender: UIButton) {
         guard resultField.text?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0 else {
             return
         }
-        if let result = Int(resultField.text!) where result == currentResult {
-            currentExam++
-            flashInputWithColor(UIColor.greenColor())
-            if (currentExam > self.numberOfExams) {
-                if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("ExamFinishedViewController") as? ExamFinishedViewController {
-                    controller.tasksNumber = self.numberOfExams
-                    controller.errorsNumber = self.errorsNumber
-                    self.navigationController?.pushViewController(controller, animated: true)
+        if let result = Int(resultField.text!) {
+            if result == currentResult {
+                currentExam++
+                flashInputWithColor(UIColor.greenColor())
+                if (currentExam > self.numberOfExams) {
+                    if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("ExamFinishedViewController") as? ExamFinishedViewController {
+                        controller.tasksNumber = self.numberOfExams
+                        controller.errorOperations = self.errorOperations
+                        self.showViewController(controller, sender: self)
+                    }
+                } else {
+                    getNextExam()
                 }
             } else {
-                getNextExam()
+                self.errorOperations.append((x: self.firstNumber, y : self.secondNumber, op: self.currentOperation, result: result))
+                errorsNumber++
+                flashInputWithColor(UIColor.redColor())
+                if verifyAllOperations(x: self.firstNumber, y: self.secondNumber, result: result) {
+                    flashSign()
+                }
             }
-
-        } else {
-            errorsNumber++
-            flashInputWithColor(UIColor.redColor())
         }
         //self.resultField.text = ""
     }
 
+    func verifyAllOperations( x x : Int, y : Int, result : Int) -> Bool {
+        for op in allOperations {
+            if op(x, y) == result {
+                return true
+            }
+        }
+        return false
+    }
+
     func setTaskConditions(x x : Int, y : Int, sign : MathSign) {
-        self.firstNumberLabel.text = "\(x)"
-        self.secondNumberLabel.text = "\(y)"
+        self.firstNumber = x
+        self.secondNumber = y
+        self.currentOperation = sign
         switch(sign) {
         case .Plus:
-            self.signLabel.text = "+"
             currentResult = x + y
         case .Minus:
-            self.signLabel.text = "-"
             currentResult = x - y
         case .Multiplication:
-            self.signLabel.text = "*"
             currentResult = x * y
         case .Division:
-            self.signLabel.text = "/"
             currentResult = x / y
         }
     }
