@@ -108,7 +108,9 @@ class ExaminatorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBarHidden = true
+        //self.navigationController?.navigationBarHidden = true
+        self.title = "Tasks"
+        self.navigationItem.hidesBackButton = true
         self.numberOfExamsLabel.text = "\(self.numberOfExams)"
         getNextExam()
         self.resultField.becomeFirstResponder()

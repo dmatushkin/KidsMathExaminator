@@ -479,6 +479,7 @@
                             <constraint firstItem="5I9-eA-MJF" firstAttribute="centerX" secondItem="ZLn-nw-p4C" secondAttribute="centerX" id="aDa-aK-IOd"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="cdH-1P-PsP"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="errorsLabel" destination="qyy-Pu-Xxs" id="dZE-8o-p2v"/>
@@ -489,7 +490,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPw-E5-tsj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="WTd-8g-Orv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1421.5" y="1252.5"/>
+            <point key="canvasLocation" x="2233.5" y="1252.5"/>
         </scene>
         <!--Errors List View Controller-->
         <scene sceneID="UJx-wq-cIi">
@@ -503,13 +504,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o8F-vi-c1i">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o8F-vi-c1i">
                                 <rect key="frame" x="16" y="20" width="343" height="595"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="KidsMathExaminator.ErrorListCell" id="lNr-R5-fuE" customClass="ErrorListCell" customModule="KidsMathExaminator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <rect key="frame" x="0.0" y="92" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lNr-R5-fuE" id="obp-bj-24Q">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
@@ -611,7 +612,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FPI-NR-sb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="cFh-00-FfQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1871.5" y="1252.5"/>
+            <point key="canvasLocation" x="2683.5" y="1252.5"/>
         </scene>
         <!--Title-->
         <scene sceneID="0dF-yq-h4i">
@@ -675,6 +676,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r8P-n4-jjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="444" y="475"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Z9t-7i-cfj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0a3-Hf-Kbn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="41l-CT-IB5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ojU-zY-2dL" kind="relationship" relationship="rootViewController" id="Bgw-Ru-DDN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Il6-qC-WUF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1719.5" y="1252.5"/>
         </scene>
     </scenes>
     <resources>

@@ -20,7 +20,8 @@ class ExamFinishedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Mistakes"
+        self.title = "You've done"
+        self.navigationItem.hidesBackButton = true
         self.tasksPassedLabel.text = "\(self.tasksNumber)"
         self.errorsLabel.text = "\(self.errorOperations.count)"
         if self.errorOperations.count > 0 {
@@ -28,7 +29,6 @@ class ExamFinishedViewController: UIViewController {
         } else {
             self.viewErrorsButton.hidden = true
         }
-        self.navigationController?.navigationBarHidden = true
     }
 
 
