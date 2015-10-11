@@ -13,6 +13,32 @@ enum MathSign {
     case Minus
     case Multiplication
     case Division
+
+    func stringRepresentation() -> String {
+        switch(self) {
+        case .Plus:
+            return "+"
+        case .Minus:
+            return "-"
+        case .Multiplication:
+            return "*"
+        case .Division:
+            return "/"
+        }
+    }
+
+    func mathRepresentation() -> ((Int, Int) -> Int){
+        switch(self) {
+        case .Plus:
+            return (+)
+        case .Minus:
+            return (-)
+        case .Multiplication:
+            return (*)
+        case .Division:
+            return (/)
+        }
+    }
 }
 
 class ExaminatorViewController: UIViewController {
@@ -76,16 +102,7 @@ class ExaminatorViewController: UIViewController {
     }
     var currentOperation : MathSign = MathSign.Plus {
         didSet {
-            switch(currentOperation) {
-            case .Plus:
-                self.signLabel.text = "+"
-            case .Minus:
-                self.signLabel.text = "-"
-            case .Multiplication:
-                self.signLabel.text = "*"
-            case .Division:
-                self.signLabel.text = "/"
-            }
+            self.signLabel.text = self.currentOperation.stringRepresentation()
         }
     }
 
@@ -164,16 +181,7 @@ class ExaminatorViewController: UIViewController {
         self.firstNumber = x
         self.secondNumber = y
         self.currentOperation = sign
-        switch(sign) {
-        case .Plus:
-            currentResult = x + y
-        case .Minus:
-            currentResult = x - y
-        case .Multiplication:
-            currentResult = x * y
-        case .Division:
-            currentResult = x / y
-        }
+        currentResult = sign.mathRepresentation()(x, y)
     }
 
     func getNextExam() {

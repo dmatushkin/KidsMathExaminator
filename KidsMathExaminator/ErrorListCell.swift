@@ -29,16 +29,7 @@ class ErrorListCell: UITableViewCell {
 
     var sign : MathSign = MathSign.Plus {
         didSet {
-            switch(sign) {
-            case .Plus:
-                self.signLabel.text = "+"
-            case .Minus:
-                self.signLabel.text = "-"
-            case .Multiplication:
-                self.signLabel.text = "*"
-            case .Division:
-                self.signLabel.text = "/"
-            }
+            self.signLabel.text = sign.stringRepresentation()
         }
     }
 
