@@ -50,6 +50,7 @@ class ExaminatorViewController: UIViewController {
     @IBOutlet weak var currentExamLabel: UILabel!
     @IBOutlet weak var numberOfExamsLabel: UILabel!
     @IBOutlet weak var numberOfErrorsLabel: UILabel!
+    @IBOutlet weak var equalsLabel: UILabel!
 
     let operandMax = NSUserDefaults.operandMaximum
     let numberOfExams = NSUserDefaults.tasksCount
@@ -114,6 +115,13 @@ class ExaminatorViewController: UIViewController {
         self.numberOfExamsLabel.text = "\(self.numberOfExams)"
         getNextExam()
         self.resultField.becomeFirstResponder()
+        if UIScreen.mainScreen().bounds.size.height == 480.0 {
+            self.firstNumberLabel.font = UIFont.systemFontOfSize(30)
+            self.secondNumberLabel.font = UIFont.systemFontOfSize(30)
+            self.signLabel.font = UIFont.systemFontOfSize(30)
+            self.equalsLabel.font = UIFont.systemFontOfSize(30)
+            self.resultField.font = UIFont.systemFontOfSize(30)
+        }
     }
 
     // MARK: - Navigation

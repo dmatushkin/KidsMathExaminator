@@ -14,17 +14,17 @@
 		563135F41BB1AD2C007D46D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563135F21BB1AD2C007D46D7 /* LaunchScreen.storyboard */; };
 		563135FF1BB1AD2C007D46D7 /* KidsMathExaminatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563135FE1BB1AD2C007D46D7 /* KidsMathExaminatorTests.swift */; };
 		5631360A1BB1AD2C007D46D7 /* KidsMathExaminatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563136091BB1AD2C007D46D7 /* KidsMathExaminatorUITests.swift */; };
-		563136181BB1BF02007D46D7 /* NumberSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563136171BB1BF02007D46D7 /* NumberSelectTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		5654446F1BCA4AA700BF72E7 /* ErrorsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5654446E1BCA4AA700BF72E7 /* ErrorsListViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		565444711BCA542D00BF72E7 /* ErrorListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565444701BCA542D00BF72E7 /* ErrorListCell.swift */; settings = {ASSET_TAGS = (); }; };
-		56A60C1D1BB1C5DF00D5C52B /* ExaminatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A60C1C1BB1C5DF00D5C52B /* ExaminatorViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		56A60C1F1BB26DE400D5C52B /* ExamFinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A60C1E1BB26DE400D5C52B /* ExamFinishedViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		56D42DF11BB3246100CE6245 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DF01BB3246100CE6245 /* SwitchCell.swift */; settings = {ASSET_TAGS = (); }; };
-		56D42DF31BB3247F00CE6245 /* DisclosureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DF21BB3247F00CE6245 /* DisclosureCell.swift */; settings = {ASSET_TAGS = (); }; };
-		56D42DFA1BB3280500CE6245 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DF91BB3280500CE6245 /* UITableViewCellExtension.swift */; settings = {ASSET_TAGS = (); }; };
-		56D42DFC1BB3292B00CE6245 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DFB1BB3292B00CE6245 /* UITableViewExtension.swift */; settings = {ASSET_TAGS = (); }; };
-		56D42DFE1BB338DC00CE6245 /* NumberSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DFD1BB338DC00CE6245 /* NumberSelectorCell.swift */; settings = {ASSET_TAGS = (); }; };
-		56D42E001BB3C8F900CE6245 /* NSUserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DFF1BB3C8F900CE6245 /* NSUserDefaultsExtension.swift */; settings = {ASSET_TAGS = (); }; };
+		563136181BB1BF02007D46D7 /* NumberSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563136171BB1BF02007D46D7 /* NumberSelectTableViewController.swift */; };
+		5654446F1BCA4AA700BF72E7 /* ErrorsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5654446E1BCA4AA700BF72E7 /* ErrorsListViewController.swift */; };
+		565444711BCA542D00BF72E7 /* ErrorListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565444701BCA542D00BF72E7 /* ErrorListCell.swift */; };
+		56A60C1D1BB1C5DF00D5C52B /* ExaminatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A60C1C1BB1C5DF00D5C52B /* ExaminatorViewController.swift */; };
+		56A60C1F1BB26DE400D5C52B /* ExamFinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A60C1E1BB26DE400D5C52B /* ExamFinishedViewController.swift */; };
+		56D42DF11BB3246100CE6245 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DF01BB3246100CE6245 /* SwitchCell.swift */; };
+		56D42DF31BB3247F00CE6245 /* DisclosureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DF21BB3247F00CE6245 /* DisclosureCell.swift */; };
+		56D42DFA1BB3280500CE6245 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DF91BB3280500CE6245 /* UITableViewCellExtension.swift */; };
+		56D42DFC1BB3292B00CE6245 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DFB1BB3292B00CE6245 /* UITableViewExtension.swift */; };
+		56D42DFE1BB338DC00CE6245 /* NumberSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DFD1BB338DC00CE6245 /* NumberSelectorCell.swift */; };
+		56D42E001BB3C8F900CE6245 /* NSUserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DFF1BB3C8F900CE6245 /* NSUserDefaultsExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,6 +265,7 @@
 				TargetAttributes = {
 					563135E51BB1AD2C007D46D7 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 5LPE595N4R;
 					};
 					563135F91BB1AD2C007D46D7 = {
 						CreatedOnToolsVersion = 7.0;
@@ -480,6 +481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KidsMathExaminator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mdd.KidsMathExaminator;
@@ -491,6 +493,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KidsMathExaminator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mdd.KidsMathExaminator;
