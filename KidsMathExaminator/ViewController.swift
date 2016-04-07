@@ -16,7 +16,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         updateRunButton()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardNotification:", name: UIKeyboardWillChangeFrameNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.keyboardNotification(_:)), name: UIKeyboardWillChangeFrameNotification, object: nil)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.bottomLayoutConstraint.constant = 8.0
     }
 
     func keyboardNotification(notification: NSNotification) {
@@ -26,11 +31,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let animationCurveRawNSN = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber
             let animationCurveRaw = animationCurveRawNSN?.unsignedLongValue ?? UIViewAnimationOptions.CurveEaseInOut.rawValue
             let animationCurve:UIViewAnimationOptions = UIViewAnimationOptions(rawValue: animationCurveRaw)
-            self.bottomLayoutConstraint.constant = (endFrame?.size.height ?? 0.0) + 8.0
+            
             UIView.animateWithDuration(duration,
                 delay: NSTimeInterval(0),
                 options: animationCurve,
-                animations: { self.view.layoutIfNeeded() },
+                animations: {[weak self] in
+                    self?.bottomLayoutConstraint.constant = (endFrame?.size.height ?? 0.0) + 8.0
+                    self?.view.layoutIfNeeded()
+                },
                 completion: nil)
         }
     }

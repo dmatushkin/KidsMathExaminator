@@ -129,12 +129,16 @@ class ExaminatorViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     }
 
-    func flashInputWithColor(color : UIColor) {
-        UIView.animateWithDuration(0.5, animations: { () -> Void in
-            self.resultField.backgroundColor = color
-            }, completion: { (success) -> Void in
+    func flashInputWithColor(color : UIColor, clear : Bool) {
+        UIView.animateWithDuration(0.5, animations: { [weak self]() -> Void in
+            self?.resultField.backgroundColor = color
+            }, completion: { [weak self](success) -> Void in
                 UIView.animateWithDuration(0.5, animations: { () -> Void in
-                    self.resultField.backgroundColor = UIColor.whiteColor()
+                    self?.resultField.backgroundColor = UIColor.whiteColor()
+                    }, completion: { [weak self] success in
+                        if clear {
+                            self?.resultField.text = ""
+                        }
                 })
         })
     }
@@ -150,13 +154,13 @@ class ExaminatorViewController: UIViewController {
     }
 
     @IBAction func nextAction(sender: UIButton) {
-        guard resultField.text?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0 else {
+        guard resultField.text?.characters.count > 0 else {
             return
         }
         if let result = Int(resultField.text!) {
             if result == currentResult {
-                currentExam++
-                flashInputWithColor(UIColor.greenColor())
+                currentExam += 1
+                flashInputWithColor(UIColor.greenColor(), clear: true)
                 if (currentExam > self.numberOfExams) {
                     if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("ExamFinishedViewController") as? ExamFinishedViewController {
                         controller.tasksNumber = self.numberOfExams
@@ -168,8 +172,8 @@ class ExaminatorViewController: UIViewController {
                 }
             } else {
                 self.errorOperations.append((x: self.firstNumber, y : self.secondNumber, op: self.currentOperation, result: result))
-                errorsNumber++
-                flashInputWithColor(UIColor.redColor())
+                errorsNumber += 1
+                flashInputWithColor(UIColor.redColor(), clear: false)
                 if verifyAllOperations(x: self.firstNumber, y: self.secondNumber, result: result) {
                     flashSign()
                 }
@@ -195,7 +199,6 @@ class ExaminatorViewController: UIViewController {
     }
 
     func getNextExam() {
-        self.resultField.text = ""
         let sign = self.operations[Int(arc4random_uniform(UInt32(self.operations.count)))]
         var x = Int(arc4random_uniform(UInt32(operandMax))) + 1
         var y = Int(arc4random_uniform(UInt32(operandMax))) + 1
