@@ -27,7 +27,7 @@ class ErrorListCell: UITableViewCell {
         }
     }
 
-    var sign : MathSign = MathSign.Plus {
+    var sign : MathSign = MathSign.plus {
         didSet {
             self.signLabel.text = sign.stringRepresentation()
         }

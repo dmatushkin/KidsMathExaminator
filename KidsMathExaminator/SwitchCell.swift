@@ -20,9 +20,9 @@ class SwitchCell: UITableViewCell {
         // Initialization code
     }
 
-    @IBAction func valueChangedAction(sender: AnyObject) {
+    @IBAction func valueChangedAction(_ sender: AnyObject) {
         if let handler = self.onValueUpdate {
-            handler(self.valueSwitch.on)
+            handler(self.valueSwitch.isOn)
         }
     }
 }

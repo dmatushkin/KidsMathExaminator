@@ -22,19 +22,19 @@ class ErrorsListViewController: UIViewController, UITableViewDataSource, UITable
 
     // MARK: - Navigation
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     }
 
 
     // MARK: - table view data source
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.errorOperations.count
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueCell(ErrorListCell.self, indexPath: indexPath)
-        let errorTask = self.errorOperations[indexPath.row]
+        let errorTask = self.errorOperations[(indexPath as NSIndexPath).row]
         cell.firstNumber = errorTask.x
         cell.secondNumber = errorTask.y
         cell.sign = errorTask.op

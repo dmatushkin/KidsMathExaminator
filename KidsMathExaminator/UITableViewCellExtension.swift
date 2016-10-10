@@ -10,6 +10,6 @@ import UIKit
 
 extension UITableViewCell {
     class func identifier() -> String {
-        return String(UTF8String: class_getName(self))!
+        return String(validatingUTF8: class_getName(self))!
     }
 }

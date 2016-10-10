@@ -16,24 +16,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         updateRunButton()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.keyboardNotification(_:)), name: UIKeyboardWillChangeFrameNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardNotification(_:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.bottomLayoutConstraint.constant = 8.0
     }
 
-    func keyboardNotification(notification: NSNotification) {
-        if let userInfo = notification.userInfo {
-            let endFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.CGRectValue()
-            let duration:NSTimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
+    func keyboardNotification(_ notification: Notification) {
+        if let userInfo = (notification as NSNotification).userInfo {
+            let endFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
+            let duration:TimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
             let animationCurveRawNSN = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber
-            let animationCurveRaw = animationCurveRawNSN?.unsignedLongValue ?? UIViewAnimationOptions.CurveEaseInOut.rawValue
+            let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIViewAnimationOptions().rawValue
             let animationCurve:UIViewAnimationOptions = UIViewAnimationOptions(rawValue: animationCurveRaw)
             
-            UIView.animateWithDuration(duration,
-                delay: NSTimeInterval(0),
+            UIView.animate(withDuration: duration,
+                delay: TimeInterval(0),
                 options: animationCurve,
                 animations: {[weak self] in
                     self?.bottomLayoutConstraint.constant = (endFrame?.size.height ?? 0.0) + 8.0
@@ -44,17 +44,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func updateRunButton() {
-        self.runButton.enabled = (NSUserDefaults.allowAddition || NSUserDefaults.allowDivision || NSUserDefaults.allowMultiplication || NSUserDefaults.allowSubstraction) && NSUserDefaults.operandMaximum > 0 && NSUserDefaults.tasksCount > 0
-        self.runButton.backgroundColor = self.runButton.enabled ? UIColor.greenColor() : UIColor.lightGrayColor()
+        self.runButton.isEnabled = (UserDefaults.allowAddition || UserDefaults.allowDivision || UserDefaults.allowMultiplication || UserDefaults.allowSubstraction) && UserDefaults.operandMaximum > 0 && UserDefaults.tasksCount > 0
+        self.runButton.backgroundColor = self.runButton.isEnabled ? UIColor.green : UIColor.lightGray
     }
 
-    @IBAction func unwindToSettings(segue: UIStoryboardSegue) {
+    @IBAction func unwindToSettings(_ segue: UIStoryboardSegue) {
     }
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     }
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch(section) {
         case 0: return 2
         case 1: return 4
@@ -62,61 +62,61 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if indexPath.section == 0 {
-            if indexPath.row == 0 {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if (indexPath as NSIndexPath).section == 0 {
+            if (indexPath as NSIndexPath).row == 0 {
                 let cell = tableView.dequeueCell(NumberSelectorCell.self, indexPath: indexPath)
                 cell.titleLabel.text = "Operand maximum"
-                cell.valueNumber = NSUserDefaults.operandMaximum
+                cell.valueNumber = UserDefaults.operandMaximum
                 cell.onValueUpdate = { [unowned self] in
-                    NSUserDefaults.operandMaximum = $0
+                    UserDefaults.operandMaximum = $0
                     self.updateRunButton()
                 }
                 return cell
             } else {
                 let cell = tableView.dequeueCell(NumberSelectorCell.self, indexPath: indexPath)
                 cell.titleLabel.text = "Number of tasks"
-                cell.valueNumber = NSUserDefaults.tasksCount
+                cell.valueNumber = UserDefaults.tasksCount
                 cell.onValueUpdate = { [unowned self] in
-                    NSUserDefaults.tasksCount = $0
+                    UserDefaults.tasksCount = $0
                     self.updateRunButton()
                 }
                 return cell
             }
         } else {
-            if indexPath.row == 0 {
+            if (indexPath as NSIndexPath).row == 0 {
                 let cell = tableView.dequeueCell(SwitchCell.self, indexPath: indexPath)
                 cell.titleLabel.text = "Allow addition"
-                cell.valueSwitch.on = NSUserDefaults.allowAddition
+                cell.valueSwitch.isOn = UserDefaults.allowAddition
                 cell.onValueUpdate = { [unowned self] in
-                    NSUserDefaults.allowAddition = $0
+                    UserDefaults.allowAddition = $0
                     self.updateRunButton()
                 }
                 return cell
-            } else if indexPath.row == 1 {
+            } else if (indexPath as NSIndexPath).row == 1 {
                 let cell = tableView.dequeueCell(SwitchCell.self, indexPath: indexPath)
                 cell.titleLabel.text = "Allow substraction"
-                cell.valueSwitch.on = NSUserDefaults.allowSubstraction
+                cell.valueSwitch.isOn = UserDefaults.allowSubstraction
                 cell.onValueUpdate = { [unowned self] in
-                    NSUserDefaults.allowSubstraction = $0
+                    UserDefaults.allowSubstraction = $0
                     self.updateRunButton()
                 }
                 return cell
-            } else if indexPath.row == 2 {
+            } else if (indexPath as NSIndexPath).row == 2 {
                 let cell = tableView.dequeueCell(SwitchCell.self, indexPath: indexPath)
                 cell.titleLabel.text = "Allow multiplication"
-                cell.valueSwitch.on = NSUserDefaults.allowMultiplication
+                cell.valueSwitch.isOn = UserDefaults.allowMultiplication
                 cell.onValueUpdate = { [unowned self] in
-                    NSUserDefaults.allowMultiplication = $0
+                    UserDefaults.allowMultiplication = $0
                     self.updateRunButton()
                 }
                 return cell
             } else {
                 let cell = tableView.dequeueCell(SwitchCell.self, indexPath: indexPath)
                 cell.titleLabel.text = "Allow division"
-                cell.valueSwitch.on = NSUserDefaults.allowDivision
+                cell.valueSwitch.isOn = UserDefaults.allowDivision
                 cell.onValueUpdate = { [unowned self] in
-                    NSUserDefaults.allowDivision = $0
+                    UserDefaults.allowDivision = $0
                     self.updateRunButton()
                 }
                 return cell
@@ -124,11 +124,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
 
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
 
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch(section) {
         case 0: return "Limits"
         case 1: return "Allowed operators"

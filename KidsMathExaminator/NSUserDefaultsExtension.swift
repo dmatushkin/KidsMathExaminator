@@ -8,21 +8,21 @@
 
 import UIKit
 
-extension NSUserDefaults {
+extension UserDefaults {
 
-    class func getInt(key : String, defaultValue : Int) -> Int {
-        if self.standardUserDefaults().objectForKey(key) == nil {
+    class func getInt(_ key : String, defaultValue : Int) -> Int {
+        if self.standard.object(forKey: key) == nil {
             return defaultValue
         } else {
-            return self.standardUserDefaults().integerForKey(key)
+            return self.standard.integer(forKey: key)
         }
     }
 
-    class func getBool(key : String, defaultValue : Bool) -> Bool {
-        if self.standardUserDefaults().objectForKey(key) == nil {
+    class func getBool(_ key : String, defaultValue : Bool) -> Bool {
+        if self.standard.object(forKey: key) == nil {
             return defaultValue
         } else {
-            return self.standardUserDefaults().boolForKey(key)
+            return self.standard.bool(forKey: key)
         }
     }
 
@@ -31,7 +31,7 @@ extension NSUserDefaults {
             return self.getInt("operandMaximum", defaultValue: 20)
         }
         set {
-            self.standardUserDefaults().setInteger(newValue, forKey: "operandMaximum")
+            self.standard.set(newValue, forKey: "operandMaximum")
         }
     }
 
@@ -40,7 +40,7 @@ extension NSUserDefaults {
             return self.getInt("tasksCount", defaultValue: 60)
         }
         set {
-            self.standardUserDefaults().setInteger(newValue, forKey: "tasksCount")
+            self.standard.set(newValue, forKey: "tasksCount")
         }
     }
 
@@ -49,7 +49,7 @@ extension NSUserDefaults {
             return self.getBool("allowAddition", defaultValue: true)
         }
         set {
-            self.standardUserDefaults().setBool(newValue, forKey: "allowAddition")
+            self.standard.set(newValue, forKey: "allowAddition")
         }
     }
 
@@ -58,7 +58,7 @@ extension NSUserDefaults {
             return self.getBool("allowSubstraction", defaultValue: true)
         }
         set {
-            self.standardUserDefaults().setBool(newValue, forKey: "allowSubstraction")
+            self.standard.set(newValue, forKey: "allowSubstraction")
         }
     }
 
@@ -67,7 +67,7 @@ extension NSUserDefaults {
         return self.getBool("allowMultiplication", defaultValue: false)
         }
         set {
-            self.standardUserDefaults().setBool(newValue, forKey: "allowMultiplication")
+            self.standard.set(newValue, forKey: "allowMultiplication")
         }
     }
 
@@ -76,7 +76,7 @@ extension NSUserDefaults {
         return self.getBool("allowDivision", defaultValue: false)
         }
         set {
-            self.standardUserDefaults().setBool(newValue, forKey: "allowDivision")
+            self.standard.set(newValue, forKey: "allowDivision")
         }
     }
 

@@ -39,26 +39,26 @@ class NumberSelectorCell: UITableViewCell {
     }
 
     func runHandler() {
-        if let handler = onValueUpdate, number = self.valueNumber {
+        if let handler = onValueUpdate, let number = self.valueNumber {
             handler(number)
         }
     }
 
-    @IBAction func valueIncreaseAction(sender: AnyObject) {
+    @IBAction func valueIncreaseAction(_ sender: AnyObject) {
         if let num = self.valueNumber {
             self.valueNumber = num + 10
         }
         runHandler()
     }
 
-    @IBAction func valueDecreaseAction(sender: AnyObject) {
+    @IBAction func valueDecreaseAction(_ sender: AnyObject) {
         if let num = self.valueNumber {
             self.valueNumber = num - 10
         }
         runHandler()
     }
 
-    @IBAction func valueChangedAction(sender: AnyObject) {
+    @IBAction func valueChangedAction(_ sender: AnyObject) {
         if let num = self.valueNumber {
             self.valueNumber = num
         } else {

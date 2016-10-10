@@ -25,17 +25,17 @@ class ExamFinishedViewController: UIViewController {
         self.tasksPassedLabel.text = "\(self.tasksNumber)"
         self.errorsLabel.text = "\(self.errorOperations.count)"
         if self.errorOperations.count > 0 {
-            self.errorsLabel.textColor = UIColor.redColor()
+            self.errorsLabel.textColor = UIColor.red
         } else {
-            self.viewErrorsButton.hidden = true
+            self.viewErrorsButton.isHidden = true
         }
     }
 
 
     // MARK: - Navigation
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let vc = segue.destinationViewController as? ErrorsListViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? ErrorsListViewController {
             vc.errorOperations = self.errorOperations
         }
     }
