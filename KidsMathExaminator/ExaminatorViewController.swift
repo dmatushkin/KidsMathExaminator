@@ -174,7 +174,7 @@ class ExaminatorViewController: UIViewController {
     }
 
     @IBAction func nextAction(_ sender: UIButton) {
-        guard resultField.text?.characters.count > 0 else {
+        guard resultField.text?.count > 0 else {
             return
         }
         if let result = Int(resultField.text!) {
@@ -220,8 +220,8 @@ class ExaminatorViewController: UIViewController {
 
     func getNextExam() {
         let sign = self.operations[Int(arc4random_uniform(UInt32(self.operations.count)))]
-        var x = Int(arc4random_uniform(UInt32(operandMax))) + 1
-        var y = Int(arc4random_uniform(UInt32(operandMax))) + 1
+        var x = (sign == MathSign.multiplication || sign == MathSign.division) ? Int(arc4random_uniform(UInt32(operandMax-1))) + 2 : Int(arc4random_uniform(UInt32(operandMax))) + 1
+        var y = (sign == MathSign.multiplication || sign == MathSign.division) ? Int(arc4random_uniform(UInt32(operandMax-1))) + 2 : Int(arc4random_uniform(UInt32(operandMax))) + 1
         if x < y && sign == MathSign.minus {
             let z = x
             x = y

@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.bottomLayoutConstraint.constant = 8.0
     }
 
-    func keyboardNotification(_ notification: Notification) {
+    @objc func keyboardNotification(_ notification: Notification) {
         if let userInfo = (notification as NSNotification).userInfo {
             let endFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
             let duration:TimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0

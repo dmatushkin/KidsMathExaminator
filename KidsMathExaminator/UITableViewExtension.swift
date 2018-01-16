@@ -11,14 +11,14 @@ import UIKit
 extension UITableView {
 
     fileprivate func cellIdentifier<T:UITableViewCell>(_ cell : T.Type) -> String {
-        return String(validatingUTF8: class_getName(T))!
+        return String(validatingUTF8: class_getName(T.self))!
     }
 
     func registerCell<T:UITableViewCell>(_ cell : T.Type) {
-        self.register(T.self, forCellReuseIdentifier: self.cellIdentifier(T))
+        self.register(T.self, forCellReuseIdentifier: self.cellIdentifier(T.self))
     }
 
     func dequeueCell<T:UITableViewCell>(_ cell : T.Type, indexPath : IndexPath) -> T {
-        return self.dequeueReusableCell(withIdentifier: self.cellIdentifier(T), for: indexPath) as! T
+        return self.dequeueReusableCell(withIdentifier: self.cellIdentifier(T.self), for: indexPath) as! T
     }
 }
