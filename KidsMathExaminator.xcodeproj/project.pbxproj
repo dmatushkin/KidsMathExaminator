@@ -103,6 +103,7 @@
 				563135FD1BB1AD2C007D46D7 /* KidsMathExaminatorTests */,
 				563136081BB1AD2C007D46D7 /* KidsMathExaminatorUITests */,
 				563135E71BB1AD2C007D46D7 /* Products */,
+				563E160C200DE84D002D3577 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +146,13 @@
 				5631360B1BB1AD2C007D46D7 /* Info.plist */,
 			);
 			path = KidsMathExaminatorUITests;
+			sourceTree = "<group>";
+		};
+		563E160C200DE84D002D3577 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		56D42DF41BB3248700CE6245 /* ExamSettings */ = {
@@ -266,7 +274,13 @@
 					563135E51BB1AD2C007D46D7 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = 5LPE595N4R;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+						};
 					};
 					563135F91BB1AD2C007D46D7 = {
 						CreatedOnToolsVersion = 7.0;
@@ -502,12 +516,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = KidsMathExaminator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mdd.KidsMathExaminator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -516,12 +533,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = KidsMathExaminator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mdd.KidsMathExaminator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
