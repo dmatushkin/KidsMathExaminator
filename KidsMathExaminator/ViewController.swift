@@ -66,7 +66,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if (indexPath as NSIndexPath).section == 0 {
             if (indexPath as NSIndexPath).row == 0 {
                 let cell = tableView.dequeueCell(NumberSelectorCell.self, indexPath: indexPath)
-                cell.titleLabel.text = "Operand maximum"
+                cell.titleLabel.text = NSLocalizedString("Operand maximum", comment: "Maximum value for operand")
                 cell.valueNumber = UserDefaults.operandMaximum
                 cell.onValueUpdate = { [unowned self] in
                     UserDefaults.operandMaximum = $0
@@ -75,7 +75,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 return cell
             } else {
                 let cell = tableView.dequeueCell(NumberSelectorCell.self, indexPath: indexPath)
-                cell.titleLabel.text = "Number of tasks"
+                cell.titleLabel.text = NSLocalizedString("Number of tasks", comment: "Number of calculation tasks")
                 cell.valueNumber = UserDefaults.tasksCount
                 cell.onValueUpdate = { [unowned self] in
                     UserDefaults.tasksCount = $0
@@ -86,7 +86,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         } else {
             if (indexPath as NSIndexPath).row == 0 {
                 let cell = tableView.dequeueCell(SwitchCell.self, indexPath: indexPath)
-                cell.titleLabel.text = "Allow addition"
+                cell.titleLabel.text = NSLocalizedString("Allow addition", comment: "Are addition operation tasks allowed")
                 cell.valueSwitch.isOn = UserDefaults.allowAddition
                 cell.onValueUpdate = { [unowned self] in
                     UserDefaults.allowAddition = $0
@@ -95,7 +95,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 return cell
             } else if (indexPath as NSIndexPath).row == 1 {
                 let cell = tableView.dequeueCell(SwitchCell.self, indexPath: indexPath)
-                cell.titleLabel.text = "Allow substraction"
+                cell.titleLabel.text = NSLocalizedString("Allow substraction", comment: "Are substraction operation tasks allowed")
                 cell.valueSwitch.isOn = UserDefaults.allowSubstraction
                 cell.onValueUpdate = { [unowned self] in
                     UserDefaults.allowSubstraction = $0
@@ -104,7 +104,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 return cell
             } else if (indexPath as NSIndexPath).row == 2 {
                 let cell = tableView.dequeueCell(SwitchCell.self, indexPath: indexPath)
-                cell.titleLabel.text = "Allow multiplication"
+                cell.titleLabel.text = NSLocalizedString("Allow multiplication", comment: "Are multiplication operation tasks allowed")
                 cell.valueSwitch.isOn = UserDefaults.allowMultiplication
                 cell.onValueUpdate = { [unowned self] in
                     UserDefaults.allowMultiplication = $0
@@ -113,7 +113,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 return cell
             } else {
                 let cell = tableView.dequeueCell(SwitchCell.self, indexPath: indexPath)
-                cell.titleLabel.text = "Allow division"
+                cell.titleLabel.text = NSLocalizedString("Allow division", comment: "Are division operation tasks allowed")
                 cell.valueSwitch.isOn = UserDefaults.allowDivision
                 cell.onValueUpdate = { [unowned self] in
                     UserDefaults.allowDivision = $0
@@ -130,8 +130,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch(section) {
-        case 0: return "Limits"
-        case 1: return "Allowed operators"
+        case 0: return NSLocalizedString("Limits", comment: "Limits section title")
+        case 1: return NSLocalizedString("Allowed operators", comment: "Operations section title")
         default: return nil
         }
     }

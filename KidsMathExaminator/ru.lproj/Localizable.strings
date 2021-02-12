@@ -1,0 +1,33 @@
+/* Are addition operation tasks allowed */
+"Allow addition" = "Сложение";
+
+/* Are division operation tasks allowed */
+"Allow division" = "Вычитание";
+
+/* Are multiplication operation tasks allowed */
+"Allow multiplication" = "Умножение";
+
+/* Are substraction operation tasks allowed */
+"Allow substraction" = "Деление";
+
+/* Operations section title */
+"Allowed operators" = "Разрешенные действия";
+
+/* Limits section title */
+"Limits" = "Ограничения";
+
+/* Mistakes screen title */
+"Mistakes" = "Ошибки";
+
+/* Number of calculation tasks */
+"Number of tasks" = "Количество заданий";
+
+/* Maximum value for operand */
+"Operand maximum" = "Максимальное значение";
+
+/* Tasks screen title */
+"Tasks" = "Задания";
+
+/* Finish screen title */
+"You've done" = "Вы справились";
+

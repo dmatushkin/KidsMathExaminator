@@ -15,7 +15,7 @@ class ErrorsListViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
-        self.title = "Mistakes"
+        self.title = NSLocalizedString("Mistakes", comment: "Mistakes screen title") 
     }
 
 

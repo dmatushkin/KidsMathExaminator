@@ -1,0 +1,96 @@
+/* Class = "UIBarButtonItem"; title = "Set"; ObjectID = "643-qy-ORC"; */
+"643-qy-ORC.title" = "Установить";
+
+/* Class = "UILabel"; text = "+"; ObjectID = "aas-VN-XAE"; */
+"aas-VN-XAE.text" = "+";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "AFs-sf-Axo"; */
+"AFs-sf-Axo.text" = "10";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "aO0-7N-Jh9"; */
+"aO0-7N-Jh9.text" = "100";
+
+/* Class = "UITextField"; text = "100"; ObjectID = "bD7-LD-QD6"; */
+"bD7-LD-QD6.text" = "100";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "brd-rg-reY"; */
+"brd-rg-reY.text" = "0";
+
+/* Class = "UILabel"; text = "60"; ObjectID = "CsU-3g-gZ3"; */
+"CsU-3g-gZ3.text" = "60";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "gqq-xV-2gu"; */
+"gqq-xV-2gu.text" = "100";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "GYe-tw-g7T"; */
+"GYe-tw-g7T.text" = "Label";
+
+/* Class = "UILabel"; text = "Mistakes:"; ObjectID = "ham-EO-zF9"; */
+"ham-EO-zF9.text" = "Ошибки:";
+
+/* Class = "UILabel"; text = "Task:"; ObjectID = "IG1-uh-jAS"; */
+"IG1-uh-jAS.text" = "Задание:";
+
+/* Class = "UINavigationItem"; title = "Exam settings"; ObjectID = "IXX-sB-tHo"; */
+"IXX-sB-tHo.title" = "Настройки";
+
+/* Class = "UIButton"; normalTitle = "Run"; ObjectID = "JBt-J5-xXq"; */
+"JBt-J5-xXq.normalTitle" = "Запустить";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "JJB-fE-PWA"; */
+"JJB-fE-PWA.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "JNg-1U-A3Z"; */
+"JNg-1U-A3Z.text" = "Label";
+
+/* Class = "UILabel"; text = "5"; ObjectID = "jNo-GN-S3u"; */
+"jNo-GN-S3u.text" = "5";
+
+/* Class = "UILabel"; text = "of"; ObjectID = "lbr-5B-WNw"; */
+"lbr-5B-WNw.text" = "из";
+
+/* Class = "UILabel"; text = "60"; ObjectID = "Mbn-Gp-Y9w"; */
+"Mbn-Gp-Y9w.text" = "60";
+
+/* Class = "UILabel"; text = "11"; ObjectID = "NJZ-Bs-vSy"; */
+"NJZ-Bs-vSy.text" = "11";
+
+/* Class = "UILabel"; text = "Mistakes:"; ObjectID = "p0a-Ke-TYA"; */
+"p0a-Ke-TYA.text" = "Ошибки:";
+
+/* Class = "UIButton"; normalTitle = "View mistakes list"; ObjectID = "QLa-vZ-jlk"; */
+"QLa-vZ-jlk.normalTitle" = "Посмотреть ошибки";
+
+/* Class = "UILabel"; text = "+"; ObjectID = "QSn-Y4-6XA"; */
+"QSn-Y4-6XA.text" = "+";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "qyy-Pu-Xxs"; */
+"qyy-Pu-Xxs.text" = "0";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rrr-1L-6Wz"; */
+"rrr-1L-6Wz.text" = "Label";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "um9-eQ-n8l"; */
+"um9-eQ-n8l.text" = "1";
+
+/* Class = "UILabel"; text = "≠"; ObjectID = "vb0-PE-deW"; */
+"vb0-PE-deW.text" = "≠";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "Vdv-0M-Riu"; */
+"Vdv-0M-Riu.normalTitle" = "Готово";
+
+/* Class = "UILabel"; text = "="; ObjectID = "VFk-7h-Kor"; */
+"VFk-7h-Kor.text" = "=";
+
+/* Class = "UILabel"; text = "Tasks finished:"; ObjectID = "wIL-8f-7au"; */
+"wIL-8f-7au.text" = "Пройдено заданий:";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "y5y-yY-Fk5"; */
+"y5y-yY-Fk5.title" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "Yss-kh-XSe"; */
+"Yss-kh-XSe.normalTitle" = "Готово";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "zTq-Ky-sFB"; */
+"zTq-Ky-sFB.normalTitle" = "Дальше";
+

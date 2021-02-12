@@ -20,7 +20,7 @@ class ExamFinishedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "You've done"
+        self.title = NSLocalizedString("You've done", comment: "Finish screen title") 
         self.navigationItem.hidesBackButton = true
         self.tasksPassedLabel.text = "\(self.tasksNumber)"
         self.errorsLabel.text = "\(self.errorOperations.count)"

@@ -130,7 +130,7 @@ class ExaminatorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.navigationController?.navigationBarHidden = true
-        self.title = "Tasks"
+        self.title = NSLocalizedString("Tasks", comment: "Tasks screen title")
         self.navigationItem.hidesBackButton = true
         self.numberOfExamsLabel.text = "\(self.numberOfExams)"
         getNextExam()

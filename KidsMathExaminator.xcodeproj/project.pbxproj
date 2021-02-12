@@ -15,6 +15,8 @@
 		563135FF1BB1AD2C007D46D7 /* KidsMathExaminatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563135FE1BB1AD2C007D46D7 /* KidsMathExaminatorTests.swift */; };
 		5631360A1BB1AD2C007D46D7 /* KidsMathExaminatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563136091BB1AD2C007D46D7 /* KidsMathExaminatorUITests.swift */; };
 		563136181BB1BF02007D46D7 /* NumberSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563136171BB1BF02007D46D7 /* NumberSelectTableViewController.swift */; };
+		5647F0CD25D6B64B0065C2EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5647F0CB25D6B64B0065C2EE /* InfoPlist.strings */; };
+		5647F0D025D6B64B0065C2EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5647F0CE25D6B64B0065C2EE /* Localizable.strings */; };
 		5654446F1BCA4AA700BF72E7 /* ErrorsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5654446E1BCA4AA700BF72E7 /* ErrorsListViewController.swift */; };
 		565444711BCA542D00BF72E7 /* ErrorListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565444701BCA542D00BF72E7 /* ErrorListCell.swift */; };
 		56A60C1D1BB1C5DF00D5C52B /* ExaminatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A60C1C1BB1C5DF00D5C52B /* ExaminatorViewController.swift */; };
@@ -59,6 +61,9 @@
 		563136091BB1AD2C007D46D7 /* KidsMathExaminatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsMathExaminatorUITests.swift; sourceTree = "<group>"; };
 		5631360B1BB1AD2C007D46D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		563136171BB1BF02007D46D7 /* NumberSelectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberSelectTableViewController.swift; sourceTree = "<group>"; };
+		5647F0CC25D6B64B0065C2EE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5647F0CF25D6B64B0065C2EE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5647F0D125D6B64B0065C2EE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		5654446E1BCA4AA700BF72E7 /* ErrorsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorsListViewController.swift; sourceTree = "<group>"; };
 		565444701BCA542D00BF72E7 /* ErrorListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorListCell.swift; sourceTree = "<group>"; };
 		56A60C1C1BB1C5DF00D5C52B /* ExaminatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExaminatorViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +186,8 @@
 			children = (
 				563135F01BB1AD2C007D46D7 /* Assets.xcassets */,
 				563135F51BB1AD2C007D46D7 /* Info.plist */,
+				5647F0CE25D6B64B0065C2EE /* Localizable.strings */,
+				5647F0CB25D6B64B0065C2EE /* InfoPlist.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -298,8 +305,10 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 563135DD1BB1AD2C007D46D7;
 			productRefGroup = 563135E71BB1AD2C007D46D7 /* Products */;
@@ -318,7 +327,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5647F0D025D6B64B0065C2EE /* Localizable.strings in Resources */,
 				563135F41BB1AD2C007D46D7 /* LaunchScreen.storyboard in Resources */,
+				5647F0CD25D6B64B0065C2EE /* InfoPlist.strings in Resources */,
 				563135F11BB1AD2C007D46D7 /* Assets.xcassets in Resources */,
 				563135EF1BB1AD2C007D46D7 /* Main.storyboard in Resources */,
 			);
@@ -397,6 +408,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				563135EE1BB1AD2C007D46D7 /* Base */,
+				5647F0D125D6B64B0065C2EE /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -407,6 +419,22 @@
 				563135F31BB1AD2C007D46D7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5647F0CB25D6B64B0065C2EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5647F0CC25D6B64B0065C2EE /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5647F0CE25D6B64B0065C2EE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5647F0CF25D6B64B0065C2EE /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
