@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import KidsMathExaminator
 
 class KidsMathExaminatorTests: XCTestCase {
     

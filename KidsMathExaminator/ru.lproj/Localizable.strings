@@ -2,16 +2,22 @@
 "Allow addition" = "Сложение";
 
 /* Are division operation tasks allowed */
-"Allow division" = "Вычитание";
+"Allow division" = "Деление";
 
 /* Are multiplication operation tasks allowed */
 "Allow multiplication" = "Умножение";
 
 /* Are substraction operation tasks allowed */
-"Allow substraction" = "Деление";
+"Allow substraction" = "Вычитание";
 
 /* Operations section title */
 "Allowed operators" = "Разрешенные действия";
+
+"Back to settings" = "К настройкам";
+"Correct answer" = "Правильный ответ";
+"Decrease" = "Уменьшить";
+"Errors" = "Ошибки";
+"Increase" = "Увеличить";
 
 /* Limits section title */
 "Limits" = "Ограничения";
@@ -19,15 +25,23 @@
 /* Mistakes screen title */
 "Mistakes" = "Ошибки";
 
+"Next" = "Далее";
+
 /* Number of calculation tasks */
 "Number of tasks" = "Количество заданий";
 
 /* Maximum value for operand */
 "Operand maximum" = "Максимальное значение";
 
+"Progress" = "Прогресс";
+"Settings" = "Настройки";
+"Start" = "Начать";
+
 /* Tasks screen title */
 "Tasks" = "Задания";
 
+"Tasks passed" = "Выполнено заданий";
+"View mistakes" = "Посмотреть ошибки";
+
 /* Finish screen title */
 "You've done" = "Вы справились";
-

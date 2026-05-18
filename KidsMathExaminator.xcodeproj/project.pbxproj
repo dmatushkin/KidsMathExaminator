@@ -7,26 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		563135EA1BB1AD2C007D46D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563135E91BB1AD2C007D46D7 /* AppDelegate.swift */; };
-		563135EC1BB1AD2C007D46D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563135EB1BB1AD2C007D46D7 /* ViewController.swift */; };
-		563135EF1BB1AD2C007D46D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563135ED1BB1AD2C007D46D7 /* Main.storyboard */; };
 		563135F11BB1AD2C007D46D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563135F01BB1AD2C007D46D7 /* Assets.xcassets */; };
-		563135F41BB1AD2C007D46D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563135F21BB1AD2C007D46D7 /* LaunchScreen.storyboard */; };
 		563135FF1BB1AD2C007D46D7 /* KidsMathExaminatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563135FE1BB1AD2C007D46D7 /* KidsMathExaminatorTests.swift */; };
 		5631360A1BB1AD2C007D46D7 /* KidsMathExaminatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563136091BB1AD2C007D46D7 /* KidsMathExaminatorUITests.swift */; };
-		563136181BB1BF02007D46D7 /* NumberSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563136171BB1BF02007D46D7 /* NumberSelectTableViewController.swift */; };
 		5647F0CD25D6B64B0065C2EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5647F0CB25D6B64B0065C2EE /* InfoPlist.strings */; };
 		5647F0D025D6B64B0065C2EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5647F0CE25D6B64B0065C2EE /* Localizable.strings */; };
-		5654446F1BCA4AA700BF72E7 /* ErrorsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5654446E1BCA4AA700BF72E7 /* ErrorsListViewController.swift */; };
-		565444711BCA542D00BF72E7 /* ErrorListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565444701BCA542D00BF72E7 /* ErrorListCell.swift */; };
-		56A60C1D1BB1C5DF00D5C52B /* ExaminatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A60C1C1BB1C5DF00D5C52B /* ExaminatorViewController.swift */; };
-		56A60C1F1BB26DE400D5C52B /* ExamFinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A60C1E1BB26DE400D5C52B /* ExamFinishedViewController.swift */; };
-		56D42DF11BB3246100CE6245 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DF01BB3246100CE6245 /* SwitchCell.swift */; };
-		56D42DF31BB3247F00CE6245 /* DisclosureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DF21BB3247F00CE6245 /* DisclosureCell.swift */; };
-		56D42DFA1BB3280500CE6245 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DF91BB3280500CE6245 /* UITableViewCellExtension.swift */; };
-		56D42DFC1BB3292B00CE6245 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DFB1BB3292B00CE6245 /* UITableViewExtension.swift */; };
-		56D42DFE1BB338DC00CE6245 /* NumberSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DFD1BB338DC00CE6245 /* NumberSelectorCell.swift */; };
-		56D42E001BB3C8F900CE6245 /* NSUserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D42DFF1BB3C8F900CE6245 /* NSUserDefaultsExtension.swift */; };
+		5650617C2FBB965600C85FA6 /* KidsMathExaminatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5650617B2FBB965600C85FA6 /* KidsMathExaminatorApp.swift */; };
+		5650617E2FBB965600C85FA6 /* MathSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5650617D2FBB965600C85FA6 /* MathSign.swift */; };
+		565061802FBB965700C85FA6 /* ExamModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5650617F2FBB965700C85FA6 /* ExamModels.swift */; };
+		565061822FBB968800C85FA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565061812FBB968800C85FA6 /* ContentView.swift */; };
+		565061842FBB968800C85FA6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565061832FBB968800C85FA6 /* SettingsView.swift */; };
+		565061862FBB968900C85FA6 /* ExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565061852FBB968900C85FA6 /* ExamView.swift */; };
+		565061882FBB96A200C85FA6 /* ExamFinishedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565061872FBB96A200C85FA6 /* ExamFinishedView.swift */; };
+		5650618A2FBB96A300C85FA6 /* MistakesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565061892FBB96A300C85FA6 /* MistakesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,11 +41,7 @@
 
 /* Begin PBXFileReference section */
 		563135E61BB1AD2C007D46D7 /* KidsMathExaminator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidsMathExaminator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		563135E91BB1AD2C007D46D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		563135EB1BB1AD2C007D46D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		563135EE1BB1AD2C007D46D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		563135F01BB1AD2C007D46D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		563135F31BB1AD2C007D46D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		563135F51BB1AD2C007D46D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		563135FA1BB1AD2C007D46D7 /* KidsMathExaminatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidsMathExaminatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		563135FE1BB1AD2C007D46D7 /* KidsMathExaminatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsMathExaminatorTests.swift; sourceTree = "<group>"; };
@@ -60,20 +49,16 @@
 		563136051BB1AD2C007D46D7 /* KidsMathExaminatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidsMathExaminatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		563136091BB1AD2C007D46D7 /* KidsMathExaminatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsMathExaminatorUITests.swift; sourceTree = "<group>"; };
 		5631360B1BB1AD2C007D46D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		563136171BB1BF02007D46D7 /* NumberSelectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberSelectTableViewController.swift; sourceTree = "<group>"; };
 		5647F0CC25D6B64B0065C2EE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5647F0CF25D6B64B0065C2EE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		5647F0D125D6B64B0065C2EE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
-		5654446E1BCA4AA700BF72E7 /* ErrorsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorsListViewController.swift; sourceTree = "<group>"; };
-		565444701BCA542D00BF72E7 /* ErrorListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorListCell.swift; sourceTree = "<group>"; };
-		56A60C1C1BB1C5DF00D5C52B /* ExaminatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExaminatorViewController.swift; sourceTree = "<group>"; };
-		56A60C1E1BB26DE400D5C52B /* ExamFinishedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamFinishedViewController.swift; sourceTree = "<group>"; };
-		56D42DF01BB3246100CE6245 /* SwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
-		56D42DF21BB3247F00CE6245 /* DisclosureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisclosureCell.swift; sourceTree = "<group>"; };
-		56D42DF91BB3280500CE6245 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
-		56D42DFB1BB3292B00CE6245 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
-		56D42DFD1BB338DC00CE6245 /* NumberSelectorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberSelectorCell.swift; sourceTree = "<group>"; };
-		56D42DFF1BB3C8F900CE6245 /* NSUserDefaultsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSUserDefaultsExtension.swift; sourceTree = "<group>"; };
+		5650617B2FBB965600C85FA6 /* KidsMathExaminatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsMathExaminatorApp.swift; sourceTree = "<group>"; };
+		5650617D2FBB965600C85FA6 /* MathSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathSign.swift; sourceTree = "<group>"; };
+		5650617F2FBB965700C85FA6 /* ExamModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamModels.swift; sourceTree = "<group>"; };
+		565061812FBB968800C85FA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		565061832FBB968800C85FA6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		565061852FBB968900C85FA6 /* ExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamView.swift; sourceTree = "<group>"; };
+		565061872FBB96A200C85FA6 /* ExamFinishedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamFinishedView.swift; sourceTree = "<group>"; };
+		565061892FBB96A300C85FA6 /* MistakesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MistakesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,11 +111,9 @@
 			isa = PBXGroup;
 			children = (
 				56D42DF61BB324E000CE6245 /* Resources */,
-				56D42DF81BB327EB00CE6245 /* Extensions */,
-				56D42DF71BB3251D00CE6245 /* Examinator */,
-				56D42DF51BB324C800CE6245 /* Storyboards */,
-				56D42DF41BB3248700CE6245 /* ExamSettings */,
-				563135E91BB1AD2C007D46D7 /* AppDelegate.swift */,
+				565061782FBB963E00C85FA6 /* App */,
+				565061792FBB963E00C85FA6 /* Models */,
+				5650617A2FBB963F00C85FA6 /* Views */,
 			);
 			path = KidsMathExaminator;
 			sourceTree = "<group>";
@@ -160,25 +143,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		56D42DF41BB3248700CE6245 /* ExamSettings */ = {
+		565061782FBB963E00C85FA6 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				563136171BB1BF02007D46D7 /* NumberSelectTableViewController.swift */,
-				563135EB1BB1AD2C007D46D7 /* ViewController.swift */,
-				56D42DF01BB3246100CE6245 /* SwitchCell.swift */,
-				56D42DF21BB3247F00CE6245 /* DisclosureCell.swift */,
-				56D42DFD1BB338DC00CE6245 /* NumberSelectorCell.swift */,
+				5650617B2FBB965600C85FA6 /* KidsMathExaminatorApp.swift */,
 			);
-			name = ExamSettings;
+			path = App;
 			sourceTree = "<group>";
 		};
-		56D42DF51BB324C800CE6245 /* Storyboards */ = {
+		565061792FBB963E00C85FA6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				563135ED1BB1AD2C007D46D7 /* Main.storyboard */,
-				563135F21BB1AD2C007D46D7 /* LaunchScreen.storyboard */,
+				5650617D2FBB965600C85FA6 /* MathSign.swift */,
+				5650617F2FBB965700C85FA6 /* ExamModels.swift */,
 			);
-			name = Storyboards;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5650617A2FBB963F00C85FA6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				565061812FBB968800C85FA6 /* ContentView.swift */,
+				565061832FBB968800C85FA6 /* SettingsView.swift */,
+				565061852FBB968900C85FA6 /* ExamView.swift */,
+				565061872FBB96A200C85FA6 /* ExamFinishedView.swift */,
+				565061892FBB96A300C85FA6 /* MistakesView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		56D42DF61BB324E000CE6245 /* Resources */ = {
@@ -190,27 +181,6 @@
 				5647F0CB25D6B64B0065C2EE /* InfoPlist.strings */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		56D42DF71BB3251D00CE6245 /* Examinator */ = {
-			isa = PBXGroup;
-			children = (
-				56A60C1E1BB26DE400D5C52B /* ExamFinishedViewController.swift */,
-				56A60C1C1BB1C5DF00D5C52B /* ExaminatorViewController.swift */,
-				5654446E1BCA4AA700BF72E7 /* ErrorsListViewController.swift */,
-				565444701BCA542D00BF72E7 /* ErrorListCell.swift */,
-			);
-			name = Examinator;
-			sourceTree = "<group>";
-		};
-		56D42DF81BB327EB00CE6245 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				56D42DF91BB3280500CE6245 /* UITableViewCellExtension.swift */,
-				56D42DFB1BB3292B00CE6245 /* UITableViewExtension.swift */,
-				56D42DFF1BB3C8F900CE6245 /* NSUserDefaultsExtension.swift */,
-			);
-			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,10 +298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5647F0D025D6B64B0065C2EE /* Localizable.strings in Resources */,
-				563135F41BB1AD2C007D46D7 /* LaunchScreen.storyboard in Resources */,
 				5647F0CD25D6B64B0065C2EE /* InfoPlist.strings in Resources */,
 				563135F11BB1AD2C007D46D7 /* Assets.xcassets in Resources */,
-				563135EF1BB1AD2C007D46D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,19 +324,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56A60C1D1BB1C5DF00D5C52B /* ExaminatorViewController.swift in Sources */,
-				563136181BB1BF02007D46D7 /* NumberSelectTableViewController.swift in Sources */,
-				563135EC1BB1AD2C007D46D7 /* ViewController.swift in Sources */,
-				56A60C1F1BB26DE400D5C52B /* ExamFinishedViewController.swift in Sources */,
-				563135EA1BB1AD2C007D46D7 /* AppDelegate.swift in Sources */,
-				5654446F1BCA4AA700BF72E7 /* ErrorsListViewController.swift in Sources */,
-				56D42E001BB3C8F900CE6245 /* NSUserDefaultsExtension.swift in Sources */,
-				56D42DFE1BB338DC00CE6245 /* NumberSelectorCell.swift in Sources */,
-				56D42DF31BB3247F00CE6245 /* DisclosureCell.swift in Sources */,
-				56D42DFC1BB3292B00CE6245 /* UITableViewExtension.swift in Sources */,
-				565444711BCA542D00BF72E7 /* ErrorListCell.swift in Sources */,
-				56D42DF11BB3246100CE6245 /* SwitchCell.swift in Sources */,
-				56D42DFA1BB3280500CE6245 /* UITableViewCellExtension.swift in Sources */,
+				5650617E2FBB965600C85FA6 /* MathSign.swift in Sources */,
+				565061842FBB968800C85FA6 /* SettingsView.swift in Sources */,
+				5650618A2FBB96A300C85FA6 /* MistakesView.swift in Sources */,
+				565061822FBB968800C85FA6 /* ContentView.swift in Sources */,
+				565061882FBB96A200C85FA6 /* ExamFinishedView.swift in Sources */,
+				565061802FBB965700C85FA6 /* ExamModels.swift in Sources */,
+				5650617C2FBB965600C85FA6 /* KidsMathExaminatorApp.swift in Sources */,
+				565061862FBB968900C85FA6 /* ExamView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,23 +367,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		563135ED1BB1AD2C007D46D7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				563135EE1BB1AD2C007D46D7 /* Base */,
-				5647F0D125D6B64B0065C2EE /* ru */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		563135F21BB1AD2C007D46D7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				563135F31BB1AD2C007D46D7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		5647F0CB25D6B64B0065C2EE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -545,9 +491,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5LPE595N4R;
 				INFOPLIST_FILE = KidsMathExaminator/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mdd.KidsMathExaminator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -561,9 +507,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5LPE595N4R;
 				INFOPLIST_FILE = KidsMathExaminator/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mdd.KidsMathExaminator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -575,6 +521,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = KidsMathExaminatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mdd.KidsMathExaminatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -589,6 +536,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = KidsMathExaminatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mdd.KidsMathExaminatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -602,6 +550,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = KidsMathExaminatorUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mdd.KidsMathExaminatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -616,6 +565,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = KidsMathExaminatorUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mdd.KidsMathExaminatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
