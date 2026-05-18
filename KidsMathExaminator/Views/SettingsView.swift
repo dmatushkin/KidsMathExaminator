@@ -107,7 +107,7 @@ private struct NumberSettingRow: View {
                 .focused($isFocused)
                 .frame(width: 64)
                 .textFieldStyle(.roundedBorder)
-                .onChange(of: textValue) { newValue in
+                .onChange(of: textValue) { _, newValue in
                     guard isFocused else { return }
                     updateValue(Int(newValue) ?? 0, updateText: false)
                 }
@@ -126,12 +126,12 @@ private struct NumberSettingRow: View {
         .onAppear {
             textValue = "\(value)"
         }
-        .onChange(of: isFocused) { focused in
+        .onChange(of: isFocused) { _, focused in
             if !focused {
                 updateValue(value)
             }
         }
-        .onChange(of: value) { newValue in
+        .onChange(of: value) { _, newValue in
             if !isFocused {
                 textValue = "\(newValue)"
             }
